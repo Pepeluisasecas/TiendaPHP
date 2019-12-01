@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Administración de usuarios - Alta</title>
+	<link rel="stylesheet" href="Administraci%C3%B3n%20de%20usuarios%20-%20Alta_files/bootstrap.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="Administraci%C3%B3n%20de%20usuarios%20-%20Alta_files/bootstrap.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="Administraci%C3%B3n%20de%20usuarios%20-%20Alta_files/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="Administraci%C3%B3n%20de%20usuarios%20-%20Alta_files/popper.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="Administraci%C3%B3n%20de%20usuarios%20-%20Alta_files/f45765d70c.js" crossorigin="anonymous"></script><link rel="stylesheet" href="Administraci%C3%B3n%20de%20usuarios%20-%20Alta_files/free.css" media="all"><link rel="stylesheet" href="Administraci%C3%B3n%20de%20usuarios%20-%20Alta_files/free-v4-font-face.css" media="all"><link rel="stylesheet" href="Administraci%C3%B3n%20de%20usuarios%20-%20Alta_files/free-v4-shims.css" media="all">
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a href="http://tienda.local/index.php" class="navbar-brand">Tienda</a>
+		<div class="collapse navbar-collapse" id="menu">
+							<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a href="http://tienda.local/courses" class="nav-link ">Cursos</a>
+					</li>
+					<li class="nav-item">
+						<a href="http://tienda.local/books" class="nav-link ">Libros</a>
+					</li>
+					<li class="nav-item">
+						<a href="http://tienda.local/shop/whoami" class="nav-link ">Quienes somos</a>
+					</li>
+					<li class="nav-item">
+						<a href="http://tienda.local/shop/contact" class="nav-link ">Contacto</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav-item">
+						<form action="/search/products" method="POST" class="form-inline">
+							<input type="text" name="search" id="search" class="form-control" size="20" placeholder="Buscar..." required="">
+							<button type="submit" class="btn btn-light"><i class="fas fa-search" aria-hidden="true"></i></button>
+						</form>
+						
+					</li>
+					<li class="nav-item">
+						<a href="http://tienda.local/shop/logout" class="nav-link">Salir</a>
+					</li>
+				</ul>
+								</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row content">
+			<div class="col-sm-2">
+				
+			</div>
+			<div class="col-sm-8">
+				<div class="card p-4 bg-light">
+	<div class="card-header">
+		<h1 class="text-center">Alta de un usuario administrador</h1>
+	</div>
+	<div class="card-body">
+		<form action="adminUser/create" method="POST">
+			<div class="form-group text-left">
+				<label for="name">Usuario</label>
+				<input type="text" name="name" class="form-control" placeholder="Escribe tu nombre completo" required="" value="nico">
+			</div>
+			<div class="form-group text-left">
+				<label for="email">Correo electrónico</label>
+				<input type="email" name="email" class="form-control" placeholder="Escribe tu correo electrónico" required="" value="nico@nico.nico">
+			</div>
+			<div class="form-group text-left">
+				<label for="password1">Contraseña</label>
+				<input type="password" name="password1" class="form-control" placeholder="Escribe tu contraseña" required="">
+			</div>
+			<div class="form-group text-left">
+				<label for="password2">Repite contraseña</label>
+				<input type="password" name="password2" class="form-control" placeholder="Repite tu contraseña" required="">
+			</div>
+			<div class="form-group text-left">
+				<input type="submit" value="Enviar" class="btn btn-success">
+				<a href="http://tienda.local/adminUser" class="btn btn-info">Cancelar</a>
+			</div>
+
+
+		</form>
+	</div>
+</div>			</div>
+			<div class="col-sm-2">
+				
+			</div>
+		</div>
+	</div>
+
+</body></html>

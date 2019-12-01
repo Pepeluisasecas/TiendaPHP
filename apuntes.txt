@@ -1,0 +1,6 @@
+el index debe obtener todo lo que reciba la paina
+
+un singleton esta formado por un constructor privado y solo es accesible mediante una funcion estatica, la cual comprueba si hay una instancia creada, si no la hay la crea y la devuelve, si la hay solo la devuelve
+
+URI, se divide en /controlador/metodoDelControlador/parametro/parametro/... esto se dividide en la clase Application.php
+
